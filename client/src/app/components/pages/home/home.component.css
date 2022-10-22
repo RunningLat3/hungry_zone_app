@@ -1,0 +1,51 @@
+ul {
+  @apply flex justify-center items-center flex-wrap list-none p-0;
+}
+
+li a {
+  @apply h-[23.5rem] w-[20rem] border-[1px] border-solid border-[whitesmoke] rounded-[1rem] m-[0.5rem] flex flex-col overflow-hidden text-[#e72929];
+}
+
+li a:hover {
+  @apply opacity-90 cursor-pointer
+}
+
+li a img {
+  @apply object-cover h-[14.5rem]
+}
+
+.content  {
+  @apply mt-[0.3rem] py-[0.5rem] px-[1rem] relative h-[8rem]
+}
+
+.favorite {
+  @apply absolute top-[0.5rem] right-[1rem] text-[1.2rem]
+}
+
+.favorite.not {
+  @apply text-[grey]
+}
+
+.stars {
+  @apply mb-[0.2rem]
+}
+
+.product-item-footer {
+  @apply flex justify-between items-start
+}
+
+.origins {
+  @apply flex-[9]
+}
+
+.origins span {
+  @apply rounded-[2rem] bg-[whitesmoke] inline-block text-[0.8rem] text-[grey] mr-[0.3rem] py-0 px-[0.5rem] mt-[0.2rem]
+}
+
+.cook-time {
+  @apply text-[0.9rem] flex-[3] text-right
+}
+
+.price {
+  @apply absolute bottom-0 left-[0.9rem] bg-white pt-[0.3rem] pr-[100%] pb-0 pl-0 text-[#414141] mt-[0.7rem] text-[1.1rem]
+}

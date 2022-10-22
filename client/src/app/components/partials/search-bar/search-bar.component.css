@@ -1,0 +1,15 @@
+div {
+  @apply flex justify-center mt-[3rem] mb-[1.5rem]
+}
+
+input {
+  @apply rounded-tl-[10rem] rounded-bl-[10rem] rounded-tr-none rounded-br-none border-none h-12 w-[20rem] bg-[#f1f1f1] p-[1.2rem] text-[1.1rem] font-medium outline-none
+}
+
+div button {
+  @apply text-[grey] h-12 w-20 text-[1rem] rounded-br-[10rem] rounded-tr-[10rem] rounded-tl-none rounded-bl-none border-none bg-[#e72929] text-white opacity-80 outline-none
+}
+
+div button:hover {
+  @apply opacity-100 cursor-pointer
+}

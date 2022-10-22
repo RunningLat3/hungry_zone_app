@@ -1,0 +1,47 @@
+header {
+  @apply relative bg-white p-0 border-[1px] border-solid border-[#e72929]
+}
+
+a {
+  @apply text-[#af1313]
+}
+
+a:hover {
+  @apply bg-[#e72929] text-white cursor-pointer
+}
+
+.container {
+  @apply my-0 mx-auto flex justify-between
+}
+
+a.logo {
+  @apply font-bold p-4
+}
+
+ul {
+  @apply flex list-none m-0
+}
+
+ul a {
+  @apply p-4 inline-block
+}
+
+a span {
+  @apply bg-[#ff4d4d] text-white py-[0.1rem] px-[0.45rem] rounded-[100rem] font-[0.9rem]
+}
+
+.menu-container {
+  @apply relative
+}
+
+.menu {
+  @apply absolute z-[1] bg-[whitesmoke] hidden
+}
+
+.menu-container:hover .menu {
+  @apply block
+}
+
+.menu a {
+  @apply w-[100%] min-w-[8rem]
+}
