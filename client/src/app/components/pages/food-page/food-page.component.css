@@ -1,0 +1,71 @@
+.container {
+  @apply flex justify-center items-center flex-wrap m-12;
+}
+
+.container > * {
+  @apply min-w-[25rem] max-w-[40rem];
+}
+
+img {
+  @apply rounded-[3rem] flex-[1_0] object-cover h-[35rem] m-4;
+}
+
+.details {
+  @apply w-[100%] flex flex-col flex-[1_0] border-[3rem] border-transparent p-8 text-black ml-4;
+}
+
+.header {
+  @apply flex justify-between;
+}
+
+.name {
+  @apply text-[2rem] font-bold;
+}
+
+.favorite {
+  @apply text-[#e72929] text-[2.5rem];
+}
+
+.favorite.not {
+  @apply text-[grey];
+}
+
+.origins {
+  @apply flex flex-wrap my-4 mx-0
+}
+
+.origins span {
+  @apply p-2 text-[1.2rem] my-2 mr-2 ml-0 rounded-[2rem] bg-[aliceblue]
+}
+
+.tags {
+  @apply flex flex-wrap
+}
+
+.tags a {
+  @apply bg-[#f0f0f0] py-[0.3rem] px-4 my-[0.2rem] mx-[0.15rem] rounded-[10rem] font-semibold text-[blue]
+}
+
+.cook-time {
+  @apply mt-4
+}
+
+.cook-time span {
+  @apply py-[0.6rem] pr-8 pl-0 rounded-[10rem] text-[1.3rem]
+}
+
+.price {
+  @apply text-[1.8rem] my-8 mr-8 ml-0 text-[green]
+}
+
+.price::before {
+  @apply text-[darkgrey] content-['Price:_']
+}
+
+button {
+  @apply text-white bg-[#e72929] border-none text-[1.2rem] p-4 rounded-[10rem] outline-none
+}
+
+button:hover {
+  @apply opacity-90 cursor-pointer
+}
