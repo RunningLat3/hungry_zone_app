@@ -1,0 +1,67 @@
+.container {
+  @apply flex flex-wrap items-start m-6 mt-1;
+}
+
+ul {
+  @apply flex flex-col flex-[3_0] justify-evenly border-[1px] border-solid border-[#ffbbbf] rounded-[1rem] list-none m-2 p-0;
+}
+
+ul li {
+  @apply flex justify-around items-center flex-wrap border-b-[1px] border-solid border-b-[#e4e4e4];
+}
+
+ul li:last-child {
+  @apply border-none;
+}
+
+li img {
+  @apply w-20 h-20 rounded-[100rem] object-cover;
+}
+
+li div {
+  @apply p-4;
+}
+
+li div:not(:first-child) {
+  @apply basis-[18%];
+}
+
+li select {
+  @apply w-12 outline-none border-none border-b-[1px] border-solid border-b-[lightgrey] text-[1.1rem] font-thin;
+}
+
+li .remove-button {
+  @apply rounded-[1rem] border-none p-2 text-[#e72929] opacity-70 outline-none;
+}
+
+li .remove-button:hover {
+  @apply opacity-100 cursor-pointer;
+}
+
+.checkout {
+  @apply flex flex-col justify-between items-center flex-[1_3] h-80 border-[1px] border-solid border-[#ffbbbb] rounded-[1rem] p-2 m-2;
+}
+
+.checkout > div {
+  @apply text-[1.4rem] m-4 flex-[3] flex flex-col justify-center items-start;
+}
+
+.foods-count {
+  @apply mb-6;
+}
+
+.foods-count::before {
+  @apply content-['Count:_'] text-[grey];
+}
+
+.total-price::before {
+  @apply content-['Price:_'] text-[grey];
+}
+
+.checkout a {
+  @apply p-4 text-white bg-[#e72929] block w-[99%] rounded-[1rem] text-center opacity-70 justify-self-center;
+}
+
+.checkout a:hover {
+  @apply opacity-100 cursor-pointer
+}

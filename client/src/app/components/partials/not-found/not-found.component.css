@@ -1,0 +1,11 @@
+div {
+  @apply flex items-center justify-center flex-col text-[1.5rem] font-thin h-60;
+}
+
+a {
+  @apply text-[1.1rem] bg-[#e72929] text-white rounded-[10rem] p-[0.7rem_1rem] m-4 opacity-80;
+}
+
+a:hover {
+  @apply opacity-100 cursor-pointer;
+}
